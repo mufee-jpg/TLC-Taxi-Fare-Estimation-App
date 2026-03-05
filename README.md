@@ -1,49 +1,61 @@
 # TLC-Taxi-Fare-Estimation-App
-<br>
-<br>
 This project analyzes NYC TLC taxi trip data to understand ride patterns and build a system that helps riders estimate taxi fares before their trip.
 <br>
-#Objectives
-<br>
+## Problem Statement
+
+Taxi riders often do not know the estimated fare before starting a trip. The goal of this project is to analyze New York City taxi trip data and explore key factors that influence taxi fares, such as trip distance, duration, passenger count, and tipping behavior.
+
+Through exploratory data analysis (EDA), this project aims to identify patterns, detect anomalies, and understand relationships between variables. These insights will support the future development of a regression model that can estimate taxi fares before a ride.
+
+## Objectives
 * Analyze taxi trip data to identify patterns in fare amount, trip distance, tips, and ride demand.
 
-*Perform exploratory data analysis (EDA) to uncover trends and anomalies in the dataset.
+* Perform exploratory data analysis (EDA) to uncover trends and anomalies in the dataset.
 
-*Build a predictive model for taxi fare estimation.
+* Build a predictive model for taxi fare estimation.
 
-*Evaluate strategies such as A/B testing to improve prediction performance.
+* Evaluate strategies such as A/B testing to improve prediction performance.
 
-Key Tasks Performed
+## Key Tasks Performed
 
-*Data cleaning and preprocessing, including handling anomalies such as trips with 0 distance.
+### 1. Data Understanding and Initial Exploration
 
-*Exploratory Data Analysis using Python, Pandas, Matplotlib, and Seaborn.
+- Examined the structure and characteristics of the TLC taxi dataset to understand available features and data types.
+- Used summary statistics and dataset inspection techniques to explore variables related to **trip distance, fare amount, tips, and ride patterns**.
+- Performed **data structuring, sorting, and filtering** to gain a deeper understanding of the dataset before analysis.
 
-*Visualization of ride trends using boxplots, histograms, bar charts, and scatter plots.
+### 2. Exploratory Data Analysis (EDA)
 
-*Analysis of monthly ride trends, weekday demand, and revenue patterns.
+- Conducted exploratory analysis to identify **patterns, anomalies, and potential outliers** in the dataset.
+- Used statistical summaries to examine **distributions and relationships between variables**.
+- Visualized key variables using **bar charts, box plots, histograms and time-series plots ** to analyze **trip distance, fare amounts, and tip distributions** over time.
 
-*Investigation of fare and tip distributions, identifying right-skewed patterns.
+### 3. Outlier Investigation
 
-*Analysis of drop-off location distribution using cumulative distribution curves.
+- Investigated unusual observations such as **trips with zero distance** and analyzed their potential impact on future modeling.
 
-#Key Insights
+### 4. Next Steps (Work in Progress)
 
-*Most taxi fares fall between $5–$15, while tips are typically $0–$3.
+- Perform **data cleaning and preprocessing** to handle inconsistencies and outliers.
+- Apply **feature engineering and predictive modeling** to build a taxi fare estimation model.
 
-*Ride demand is highest Wednesday–Saturday, and lowest Sunday–Monday.
+# Key Insights
 
-*Revenue peaks on Thursdays despite similar ride volume on Saturdays.
+* Most taxi fares fall between $5–$15, while tips are typically $0–$3.
 
-*Monthly demand shows dips during summer months and February.
+* Ride demand is highest Wednesday–Saturday, and lowest Sunday–Monday.
 
-*Trip distances appear evenly distributed across drop-off locations despite lack of geographic coordinates.
+* Revenue peaks on Thursdays despite similar ride volume on Saturdays.
 
-#Next Steps
+* Monthly demand shows dips during summer months and February.
 
-*Build a machine learning model for fare prediction.
+* Trip distances appear evenly distributed across drop-off locations despite lack of geographic coordinates.
 
-*Implement A/B testing to compare model improvements.
+# Next Steps
+
+* Build a machine learning model for fare prediction.
+
+* Implement A/B testing to compare model improvements.
 
 <br>
 
