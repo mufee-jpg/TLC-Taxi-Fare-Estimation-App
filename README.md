@@ -59,7 +59,7 @@ Columns in the dataset include:
 
 - Investigated unusual observations such as **trips with zero distance** and analyzed their potential impact on future modeling.
 
-  # Key Insights
+  ## Key Insights
 
 * Most taxi fares fall between $5–$15, while tips are typically $0–$3.
 
@@ -70,7 +70,6 @@ Columns in the dataset include:
 * Monthly demand shows dips during summer months and February.
 
 * Trip distances appear evenly distributed across drop-off locations despite lack of geographic coordinates.
-<br>
 <br>
 
 ### 4. Hypothesis Testing
@@ -99,6 +98,9 @@ Ttest_indResult(statistic=6.866800855655372, pvalue=6.797387473030518e-12)
 
 Since the p-value is significantly smaller than the significance level of 0.05, the null hypothesis is rejected. This indicates that there is a **statistically significant difference in the average fare amount between credit card and cash payments**.
 
+## Important Note
+
+The analysis suggests that trips paid with credit cards have a higher average fare than those paid with cash. However, this dataset is observational and passengers were not randomly assigned a payment method. Therefore, the hypothesis test assumes random grouping for analysis. In reality, other factors (such as longer trips being more likely to be paid by credit card) may influence the results. As a result, the findings indicate a statistical difference but do not necessarily imply that payment type causes higher fares.
 
 ### 5. Next Steps (Work in Progress)
 
